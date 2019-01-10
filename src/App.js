@@ -1,25 +1,60 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
+import About from './About';
+import Portfolio from './Portfolio';
+import Contact from './Contact';
 
 class App extends Component {
+  constructor() {
+    super();
+    this.state = {
+      currentPage: 'karin ohman'
+    };
+  }
+
+  updatePage = (event) => {
+    event.preventDefault();
+    this.setState({
+      currentPage: event.target.innerText
+    });
+  }
+
+  pageToLoad = () => {
+    switch (this.state.currentPage) {
+      case 'about': 
+        return(
+          <About />
+        );
+      case 'portfolio':
+        return(
+          <Portfolio />
+        );
+      case 'contact':
+        return(
+          <Contact />
+        );
+      default: 
+        return (
+          <div>
+            <h1>Karin Ohman</h1>
+            <h2>Frontend Web Developer</h2>
+          </div>
+        );
+    }
+  }
+
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+      <div>
+        <nav>
+          <button onClick={this.updatePage}>karin ohman</button> front end developer
+          <button onClick={this.updatePage}>about</button>
+          <button onClick={this.updatePage}>portfolio</button>
+          <button onClick={this.updatePage}>contact</button>
+        </nav>
+        { 
+          this.pageToLoad()
+        }
       </div>
     );
   }
