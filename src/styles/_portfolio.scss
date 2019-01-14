@@ -3,5 +3,12 @@ h3 {
 }
 
 .screenshots {
-  width: 800px;
+  width: 400px;
+}
+
+#portfolio-content {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: repeat(auto-fill, 420px);
+
 }

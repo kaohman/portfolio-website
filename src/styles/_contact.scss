@@ -8,9 +8,8 @@
 
 #contact-content {
   margin-top: 50px;
-  width: 390px;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(auto-fill, 100px);
   text-align: center;
   grid-gap: 60px;
 
