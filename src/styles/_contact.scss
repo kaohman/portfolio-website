@@ -1,3 +1,21 @@
 .logo {
   height: 100px;
 }
+
+#contact-headshot {
+  border-radius: 100%;
+}
+
+#contact-content {
+  margin-top: 50px;
+  width: 390px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  text-align: center;
+  grid-gap: 60px;
+
+  span {
+    display: block;
+    
+  }
+}

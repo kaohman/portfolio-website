@@ -1,6 +1,33 @@
-// body {
-//   background-image: url("../assets/background.jpg");
-//   background-repeat: no-repeat;
-//   background-size: 1800px 1200px;
-//   object-fit: contain;
-// }
+body {
+  // background-image: url("../assets/background.jpg");
+  // background-repeat: no-repeat;
+  // background-size: 1800px 1200px;
+  // object-fit: contain;
+  padding: 20px 30px;
+}
+
+h1,
+h2 {
+  font-family: $title-font;
+}
+
+h1 {
+  margin-top: 50px;
+}
+
+nav {
+  display: grid;
+  grid-template-columns: 4fr 1fr 1fr 1fr;
+}
+
+p {
+  font-family: $body-font;
+}
+
+a {
+  text-decoration: none;
+}
+
+.links:hover {
+  color: rgb(99, 240, 240);
+}

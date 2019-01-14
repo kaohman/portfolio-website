@@ -38,8 +38,8 @@ class App extends Component {
       default: 
         return (
           <div>
-            <h1>Karin Ohman</h1>
-            <h2>Front-End Web Developer</h2>
+            <h1>KARIN OHMAN</h1>
+            <h2>front-end web developer</h2>
           </div>
         );
     }
@@ -49,10 +49,10 @@ class App extends Component {
     return (
       <div>
         <nav>
-          <button onClick={this.updatePage}>karin ohman</button> front end developer
-          <button onClick={this.updatePage}>about</button>
-          <button onClick={this.updatePage}>portfolio</button>
-          <button onClick={this.updatePage}>contact</button>
+          <p onClick={this.updatePage}><span className='links'>karin ohman</span>: front end developer</p>
+          <p onClick={this.updatePage} className='links'>about</p>
+          <p onClick={this.updatePage} className='links'>portfolio</p>
+          <p onClick={this.updatePage} className='links'>contact</p>
         </nav>
         { 
           this.pageToLoad()
