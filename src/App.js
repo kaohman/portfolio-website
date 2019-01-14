@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
+import './styles/normalize.css';
+import './styles/main.scss';
 import About from './About';
 import Portfolio from './Portfolio';
 import Contact from './Contact';
@@ -37,7 +39,7 @@ class App extends Component {
         return (
           <div>
             <h1>Karin Ohman</h1>
-            <h2>Frontend Web Developer</h2>
+            <h2>Front-End Web Developer</h2>
           </div>
         );
     }
