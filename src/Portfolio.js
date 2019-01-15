@@ -2,7 +2,7 @@ import React from 'react';
 
 function Portfolio() {
   return (
-    <div>
+    <div className='page-padding-div'>
       <h1>portfolio</h1>
       <div id='portfolio-content'>
         <a href='https://github.com/kaohman/national-parks'>

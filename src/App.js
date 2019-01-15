@@ -37,8 +37,8 @@ class App extends Component {
         );
       default: 
         return (
-          <div>
-            <h1>KARIN OHMAN</h1>
+          <div className='page-padding-div'>
+            <h1 id='title-name'>KARIN OHMAN</h1>
             <h2>front-end web developer</h2>
           </div>
         );

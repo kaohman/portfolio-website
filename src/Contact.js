@@ -2,7 +2,7 @@ import React from 'react';
 
 function Contact() {
   return (
-    <div>
+    <div className='page-padding-div'>
       <h1>contact information</h1>
       <div id='contact-content'>
         <a href='https://github.com/kaohman'>
