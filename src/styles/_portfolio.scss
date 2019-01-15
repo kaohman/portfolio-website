@@ -13,3 +13,20 @@ h3 {
   grid-gap: 30px;
   grid-template-columns: repeat(auto-fill, 420px);
 }
+
+@media screen and (max-width: 450px) {
+  #portfolio-content {
+    grid-template-columns: 1fr;
+    justify-content: center;
+  }
+
+  .screenshots {
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .screenshots {
+    width: 260px;
+  }
+}

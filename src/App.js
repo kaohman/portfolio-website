@@ -39,7 +39,7 @@ class App extends Component {
         return (
           <div className='page-padding-div'>
             <h1 id='title-name'>KARIN OHMAN</h1>
-            <h2>front-end web developer</h2>
+            <h2 id='title-subheader'>front-end web developer</h2>
           </div>
         );
     }
@@ -49,7 +49,7 @@ class App extends Component {
     return (
       <div>
         <nav>
-          <p onClick={this.updatePage}><span className='links'>karin ohman</span>: front end developer</p>
+          <p onClick={this.updatePage}><span className='links'>karin ohman</span>: front-end developer</p>
           <p onClick={this.updatePage} className='links'>about</p>
           <p onClick={this.updatePage} className='links'>portfolio</p>
           <p onClick={this.updatePage} className='links'>contact</p>

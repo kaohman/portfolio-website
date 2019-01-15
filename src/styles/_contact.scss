@@ -8,14 +8,21 @@
 }
 
 #contact-content {
-  margin-top: 50px;
   display: grid;
-  grid-template-columns: repeat(auto-fill, 100px);
-  text-align: center;
   grid-gap: 60px;
+  grid-template-columns: repeat(auto-fill, 100px);
+  margin-top: 50px;
+  text-align: center;
 
   span {
     display: block;
     
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #contact-content {
+    grid-template-columns: 1fr;
+    justify-content: center;
   }
 }
