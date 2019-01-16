@@ -30,6 +30,7 @@ nav {
 
 p {
   font-family: $body-font;
+  line-height: 1.6;
 }
 
 a {
@@ -51,6 +52,10 @@ a {
 
 .links:hover {
   color: $link-hover;
+}
+
+#homepage-content {
+  max-width: 700px;
 }
 
 #title-name {

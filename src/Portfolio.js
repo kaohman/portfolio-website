@@ -17,6 +17,10 @@ function Portfolio() {
           <h3>jsProtoFunTime</h3>
           <img className='screenshots' src='./assets/prototypes-screenshot.png' alt='javascript prototypes website'></img>
         </a>
+        <a href='https://github.com/kaohman/foto-finder'>
+          <h3>foto-finder</h3>
+          <img className='screenshots' src='./assets/foto-finder-screenshot.png' alt='photo finder website'></img>
+        </a>
       </div>
     </div>
   )
