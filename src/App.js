@@ -4,7 +4,10 @@ import './styles/normalize.css';
 import './styles/main.scss';
 import About from './About';
 import Portfolio from './Portfolio';
+import Home from './Home';
 import Contact from './Contact';
+import { Route, Switch, NavLink, withRouter } from 'react-router-dom';
+
 
 class App extends Component {
   constructor() {
@@ -38,9 +41,6 @@ class App extends Component {
       default: 
         return (
           <div className='page-padding-div' id='homepage-content'>
-            <h1 id='title-name'>KARIN OHMAN</h1>
-            <h2 id='title-subheader'>front-end web developer</h2>
-            <p id='title-tagline'>I am an earth scientist turned web developer. I am passionate about sharing data with the world through beautifully designed web applications. Please click on the links above to learn more.</p>
           </div>
         );
     }
@@ -50,11 +50,17 @@ class App extends Component {
     return (
       <div>
         <nav>
-          <p onClick={this.updatePage}><span className='links'>karin ohman</span>: front-end developer</p>
-          <p onClick={this.updatePage} className='links'>about</p>
-          <p onClick={this.updatePage} className='links'>portfolio</p>
-          <p onClick={this.updatePage} className='links'>contact</p>
+          <NavLink exact className='links' to='/'><span className='links'>karin ohman</span>: front-end developer</NavLink>
+          <NavLink exact className='links' to='/about'>about</NavLink>
+          <NavLink exact className='links' to='/portfolio'>portfolio</NavLink>
+          <NavLink exact className='links' to='/contact'>contact</NavLink>
         </nav>
+        <Switch>
+          <Route exact path='/' component={Home} />
+          <Route path='/about' component={About} />
+          <Route path='/portfolio' component={Portfolio} />
+          <Route path='/contact' component={Contact} />
+        </Switch>
         { 
           this.pageToLoad()
         }
@@ -63,4 +69,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default withRouter(App);
