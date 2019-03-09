@@ -50,6 +50,11 @@ a {
   padding: $page-padding;
 }
 
+.links {
+  font-family: $body-font;
+  margin: 20px 0;
+}
+
 .links:hover {
   color: $link-hover;
 }

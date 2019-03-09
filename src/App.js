@@ -10,41 +10,6 @@ import { Route, Switch, NavLink, withRouter } from 'react-router-dom';
 
 
 class App extends Component {
-  constructor() {
-    super();
-    this.state = {
-      currentPage: 'karin ohman'
-    };
-  }
-
-  updatePage = (event) => {
-    event.preventDefault();
-    this.setState({
-      currentPage: event.target.innerText
-    });
-  }
-
-  pageToLoad = () => {
-    switch (this.state.currentPage) {
-      case 'about': 
-        return(
-          <About />
-        );
-      case 'portfolio':
-        return(
-          <Portfolio />
-        );
-      case 'contact':
-        return(
-          <Contact />
-        );
-      default: 
-        return (
-          <div className='page-padding-div' id='homepage-content'>
-          </div>
-        );
-    }
-  }
 
   render() {
     return (
@@ -61,9 +26,6 @@ class App extends Component {
           <Route path='/portfolio' component={Portfolio} />
           <Route path='/contact' component={Contact} />
         </Switch>
-        { 
-          this.pageToLoad()
-        }
       </div>
     );
   }
